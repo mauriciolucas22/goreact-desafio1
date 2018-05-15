@@ -1,0 +1,40 @@
+div.postContainer {
+  width: 700px;
+  padding: 30px;
+  border: 1px;
+  border-color: #CCC;
+  border-radius: 4px;
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+h1.postTitle {
+  font-size: 16px;
+  color: #333;
+}
+
+h1.postCreatedAt {
+  font-size: 14px;
+  color: #666;
+}
+
+div.postHeaderContainer {
+  display: flex;
+}
+
+div.contentHeader {
+  padding-left: 15px;
+}
+
+img.avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+hr {
+  height: 1px;
+  color: #EEE;
+}

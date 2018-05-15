@@ -10,14 +10,22 @@ class App extends Component {
   state = {
     posts: [
       {
-        title: 'Jesus Christ',
-        createdAt: '7',
+        id: 0,
+        header: {
+          avatar: 'https://avatars1.githubusercontent.com/u/20993303?s=460&v=4',
+          title: 'Jesus Christ',
+          createdAt: '7',
+        },
         content: 'Jesus loves you!',
       },
 
       {
-        title: 'God',
-        createdAt: '7',
+        id: 1,
+        header: {
+          avatar: 'https://avatars1.githubusercontent.com/u/20993303?s=460&v=4',
+          title: 'God',
+          createdAt: '7',
+        },
         content: 'God loves you!',
       },
     ],
@@ -27,7 +35,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Post />
+        { this.state.posts.map(post => <Post key={post.id} data={post} />) }
       </Fragment>
     );
   }
