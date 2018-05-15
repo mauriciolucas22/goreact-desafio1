@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import PostHeader from './PostHeader';
@@ -12,5 +12,12 @@ const Post = props => (
     <h3>{props.data.content}</h3>
   </div>
 );
+
+Post.propTypes = {
+  data: PropTypes.shape({
+    header: PropTypes.object,
+    content: PropTypes.string,
+  }).isRequired,
+};
 
 export default Post;
